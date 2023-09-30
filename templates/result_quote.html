@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting</title>
+</head>
+<body>
+    <h1>Quote search from tag: {{user_input}}</h1>
+
+    {% for item in quotes_save %}
+  <p>Quote: {{ item.quote }}</p>
+  <p>Author: {{ item.author }}</p>
+  <br>  <!-- Add a line break between each quote and author -->
+{% endfor %}
+    
+    <p><a href="/quotes"><button>Another Quotes?</button></a></p>
+    <p><a href="/words"><button>Search For Word?</button></a></p>
+    <p><a href="/quotes_day"><button>Quote of The Day?</button></a></p>
+
+</body>
+</html>
